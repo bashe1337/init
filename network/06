@@ -1,0 +1,2 @@
+etc/resolv.conf
+cat /var/run/resolv.conf
