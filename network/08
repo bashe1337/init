@@ -1,4 +1,4 @@
 nslookup slash16.org
-Copy first IP address “54.192.230.162”
-whois 54.192.230.162
+Copy first IP address 
+whois IP
 Provider is Amazon

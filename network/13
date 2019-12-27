@@ -1,0 +1,2 @@
+Do ifconfig en0 | grep "inet " | awk '{print $2}'
+Copy ip and do nslookup IP
