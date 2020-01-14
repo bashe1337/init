@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -p "Write user that you want to delete: " USER
+sudo deluser --remove-all-files $USER
