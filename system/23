@@ -1,1 +1,1 @@
-Command ssh username@ipadress
+sudo su USER or ssh USER@localhost

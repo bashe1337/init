@@ -1,2 +1,2 @@
-Do ifconfig en0 | grep "inet " | awk '{print $2}'
-Copy ip and do nslookup IP
+#nslookup $(ifconfig en0 | grep "inet " | awk '{print $2}') | grep "name" | awk '{print $4}'
+ox-s6.21-school.ru

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+Path=~/Desktop
+_R='\033[31m'
+_G='\033[32m'
+_B='\033[34m'
+
+echo -en "$_B Type your login: $_R"; read LOGIN
+echo -en "$_B Type your project: $_R"; read PROJECT
+echo -en "$_B Type your path:$_R ~/Desktop/"; read WPATH
+echo -en "\033[0m"
+cd $Path
+git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/$PROJECT/$LOGIN $PROJECT
+cd $Path/$PROJECT
+touch Makefile
+touch author
+printf "$LOGIN\n" > author
+mkdir src include
+touch ./include/$PROJECT.h
+echo -en "$_G Done!\n"
+echo -en "\033[0m"
